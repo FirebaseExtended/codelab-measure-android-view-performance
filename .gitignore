@@ -1,0 +1,8 @@
+/build
+/gradle
+gradlew
+gradlew.bat
+
+**/.DS_Store
+**/local.properties
+**/google-services.json

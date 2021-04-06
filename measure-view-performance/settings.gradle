@@ -1,0 +1,2 @@
+rootProject.name = "Measure View Performance"
+include ':app'
