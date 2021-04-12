@@ -46,8 +46,9 @@ so as to show the screen rendering information for the Fragment on the Firebase 
 as it's impossible to know (from that API) what part of the screen contributes to those results.
 
 ## Credits
- - [John Reck](https://github.com/jreck) (Google) for providing useful feedback on the various 
+ * [John Reck](https://github.com/jreck) (Google) for providing useful feedback on the various 
  approaches on how we can measure the load time of Activity.
  
- - [This](https://dev.to/pyricau/android-vitals-rising-to-the-first-drawn-surface-1j9e) and 
- [this](https://dev.to/pyricau/android-vitals-first-draw-time-m1d) posts from Py.
+ * [Pierre-Yves Ricau](https://twitter.com/Piwai) for the below 2 blog posts that we referenced:
+    * [Android Vitals - First draw time 👩‍🎨](https://dev.to/pyricau/android-vitals-first-draw-time-m1d)
+    * [Android Vitals - Rising to the first drawn surface 🤽‍♂️](https://dev.to/pyricau/android-vitals-rising-to-the-first-drawn-surface-1j9e)
