@@ -35,9 +35,10 @@ import android.view.ViewTreeObserver;
  *
  * <p>
  * References:
- * - https://dev.to/pyricau/android-vitals-first-draw-time-m1d
- * - https://dev.to/pyricau/android-vitals-rising-to-the-first-drawn-surface-1j9e
  * - https://cs.android.com/android/platform/superproject/+/master:frameworks/base/core/java/android/view/Choreographer.java
+ * - Inspired by Pierre-Yves Ricau see original posts:
+ *   - https://dev.to/pyricau/android-vitals-first-draw-time-m1d
+ *   - https://dev.to/pyricau/android-vitals-rising-to-the-first-drawn-surface-1j9e
  */
 public final class FirstDrawListener implements ViewTreeObserver.OnDrawListener {
 
