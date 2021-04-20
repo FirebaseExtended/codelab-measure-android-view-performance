@@ -15,8 +15,6 @@ buildscript {
         // Required for loading the 'google-services.json' file
         classpath 'com.google.gms:google-services:4.3.5'
 
-        // Required for Firebase Performance SDK
-        classpath 'com.google.firebase:perf-plugin:1.3.5'
     }
 }
 
