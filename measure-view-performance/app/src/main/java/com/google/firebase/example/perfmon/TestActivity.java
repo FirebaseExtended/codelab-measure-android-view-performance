@@ -16,8 +16,7 @@
 package com.google.firebase.example.perfmon;
 
 import android.os.Bundle;
-import android.view.ViewGroup;
-import android.view.WindowManager;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,11 +36,12 @@ public class TestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_test);
 
         // Firebase Performance record screen traces for Activities out-of-the-box. But it only does
-        // that for hardware accelerated views.
+        // that for hardware accelerated views. Hardware acceleration is enabled by default if your
+        // Target API level is >=14, but can also be explicitly enabled.
         ScreenTrace.enableHardwareAcceleration(this);
 
         // TODO (2): Get the view added by Activity's setContentView() method.
-        ViewGroup mainView = findViewById(android.R.id.content);
+        View mainView = findViewById(android.R.id.content);
 
         // Loading some GIF images to mimic slow rendering
         TestUtils.loadImage(this, findViewById(R.id.img_top), TestUtils.FIREBASE_LOGO_ANIMATION_GIF);
