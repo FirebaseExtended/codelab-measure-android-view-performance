@@ -66,7 +66,7 @@ public class TestFragment extends Fragment {
         // TODO (3): Register the callback to listen for first frame rendering (see
         //  "OnFirstDrawCallback" in FirstDrawListener) and stop the trace when View drawing is
         //  finished.
-        new FirstDrawListener(mainView, new FirstDrawListener.OnFirstDrawCallback() {
+        FirstDrawListener.registerFirstDrawListener(mainView, new FirstDrawListener.OnFirstDrawCallback() {
 
             @Override
             public void onDrawingStart() {

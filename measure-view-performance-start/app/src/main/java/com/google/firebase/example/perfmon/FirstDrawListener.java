@@ -72,12 +72,22 @@ public final class FirstDrawListener implements ViewTreeObserver.OnDrawListener 
     }
 
     /**
-     * Default constructor for the class.
+     * Register a FirstDrawListener instance to the caller.
      *
      * @param view              for which to register the {@link OnFirstDrawCallback}.
      * @param firstDrawCallback to be invoked on various stages of drawing of First frame.
      */
-    public FirstDrawListener(View view, OnFirstDrawCallback firstDrawCallback) {
+    public static FirstDrawListener registerFirstDrawListener(View view, OnFirstDrawCallback firstDrawCallback) {
+        return new FirstDrawListener(view, firstDrawCallback);
+    }
+
+    /**
+     * Constructor for the class.
+     *
+     * @param view              for which to register the {@link OnFirstDrawCallback}.
+     * @param firstDrawCallback to be invoked on various stages of drawing of First frame.
+     */
+    private FirstDrawListener(View view, OnFirstDrawCallback firstDrawCallback) {
         super();
 
         this.view = view;
