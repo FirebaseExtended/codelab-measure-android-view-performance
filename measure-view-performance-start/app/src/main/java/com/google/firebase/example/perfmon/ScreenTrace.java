@@ -126,7 +126,7 @@ public class ScreenTrace {
         int frozenFrames = 0;
 
         // Stops recording metrics for this Activity and returns the currently-collected metrics
-        SparseIntArray[] arr = frameMetricsAggregator.remove(activity);
+        SparseIntArray[] arr = frameMetricsAggregator.reset();
 
         if (arr != null) {
             SparseIntArray frameTimes = arr[FrameMetricsAggregator.TOTAL_INDEX];

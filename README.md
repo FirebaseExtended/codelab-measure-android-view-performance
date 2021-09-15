@@ -1,6 +1,6 @@
 # Measuring Load time and Screen Rendering with Firebase Performance
 
-This repo contains the source code to be used for the Codelab for Google I/O 2021.
+This repo contains the source code to be used for the Codelab for Google I/O 2021 and Firebase Summit 2021.
 
 Supported Features
 ------------------
