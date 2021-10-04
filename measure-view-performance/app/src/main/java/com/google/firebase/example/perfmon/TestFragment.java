@@ -34,14 +34,14 @@ import com.google.firebase.perf.metrics.Trace;
 public class TestFragment extends Fragment {
 
     // TODO (1): Declare the Trace variable.
-    private Trace viewLoadTrace;
+    private Trace fragmentLoadTrace;
 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
 
         // TODO (2): Start trace recording as soon as the Fragment is attached to its host Activity.
-        viewLoadTrace = FirebasePerformance.startTrace("TestFragment-LoadTime");
+        fragmentLoadTrace = FirebasePerformance.startTrace("TestFragment-LoadTime");
     }
 
     @Override
@@ -75,7 +75,7 @@ public class TestFragment extends Fragment {
 
             @Override
             public void onDrawingFinish() {
-                viewLoadTrace.stop();
+                fragmentLoadTrace.stop();
             }
         });
     }
